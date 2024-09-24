@@ -1,0 +1,12 @@
+---
+import Hero from '../components/Hero.component';
+import About from '../components/sections/About.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Hello!">
+    <main class="w-full h-screen">
+        <Hero client:only="react" />
+    </main>
+    <About />
+</Layout>
